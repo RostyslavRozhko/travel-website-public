@@ -1,0 +1,779 @@
+
+*{
+	outline: none;
+}
+
+body{
+	overflow-x: hidden;
+	width: 100%;
+	background: white;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+.col-md-3{
+	background: inherit;
+	padding: 25px;
+	border-right: 1px solid #E0E0E0;
+
+}
+
+.city-logo{
+	position: relative;
+	height: 50px;
+	
+}
+
+.round-photo-logo{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+.city-name{
+	display: inline-block;
+	position: absolute;
+	margin: auto;
+	top: 10px;
+	margin-left: 5px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.city-map{
+	display: block;
+	height: 232px;
+	width: 286.25px;
+	text-align: center;
+	margin: 10px auto;
+	background-repeat: no-repeat;
+	border-radius: 6px;
+}
+
+small{
+	font-family: inherit; 
+}
+
+.stats{
+	margin: 30px 0;
+	display: inline-block;
+}
+
+.overview > h5{
+	color: #757575;
+}
+
+.row{
+	line-height: 22px;
+	vertical-align: middle;
+	margin: 10px 0;
+}
+
+.icon{
+	font-size: 1.4em; 
+}
+
+.stats-text{
+	margin-left: 5px;
+	display: inline-block;
+	font-family: inherit;
+ 	font-weight: bold;
+  	color: inherit;
+}
+
+.text{
+	display: inline-block;
+	font-weight: bold;
+	color: #757575; 
+}
+
+.col-md-9{
+	position: relative;
+	padding: 25px;
+	background: inherit;
+}
+
+.opinions-tab{
+	line-height: 75px;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+.header-text{
+	display: inline-block;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.down-menu{
+	margin-top: 25px;
+	float: right;
+	border: none;
+}
+
+.sort-comments{
+	border: none;
+	display: inline-block;
+	font-weight: bold;
+	color: #757575;
+}
+
+.language{
+	margin-right: 25px; 
+}
+
+.comments-section{
+	text-align: center;
+}
+
+.comment{
+	box-sizing: border-box;
+	margin: 40px auto;
+	width: 700px;
+	height: 200px;
+}
+
+.user-info{
+	margin-right: 5px;
+	padding: 0 10px;
+	float: left;
+	width: 25%;
+	height: inherit;
+	background: white;
+}
+
+.user-photo{
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background-size: contain; !important;
+	background-position: center; !important;
+	background-repeat: no-repeat; !important;
+	cursor: pointer;
+}
+
+.user-name{
+	display: inline-block;
+	margin-top: 25px;
+	font-size: 1em;
+	font-weight: bold; 
+}
+
+.comment-time{
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #757575;
+}
+
+.comment-box{
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	width: 69%;
+	background: white;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+	border-radius: 6px;
+}
+
+.comment-text{
+	width: 350px;
+	height: 120px;
+	color: black;
+	padding: 15px;
+	text-align: left;
+	font-weight: 400;
+	overflow-wrap: break-word;
+	
+}
+
+
+.comment-photo{
+	display: inline-block;
+	width: 133px;
+	height: 200px;
+	float: right;
+	background-size: auto 200px;
+	background-repeat: no-repeat;
+	border-top-right-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+
+.comment-footer *{
+	color: #757575;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.comment-footer{
+	position: absolute;
+	bottom: 0px;
+	padding: 15px;
+	width: 350px;
+}
+
+#likes-count{
+	margin-right: 15px;
+}
+
+.stars{
+	margin-top: 15px;
+	margin-left: 15px;
+	width:350px;
+	text-align: left;
+}
+
+.fa-star{
+	color: #FFAB00;
+}
+
+.slider{
+	z-index: 0;
+	position: relative;
+	padding: 25px;
+	display: block;
+	width: 100%;
+	height: 230px;
+	background: #212121;
+}
+
+.slider .pic{
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+	height: 125px;
+	width: 225px;
+	margin: 15px;
+	margin-bottom: 0; 
+	margin-top: 25px; 
+	border-radius: 6px;
+	border: none;
+	text-align: left;
+	padding: 0;
+	background: grey;
+	background-size: 225px 125px;
+}
+
+.search{
+	padding-left: 15px;
+	display: block;
+	height: 30px;
+	font-size: 1.3em;
+	color: white;
+}
+
+.search-query{
+	background: inherit;
+	border: none;
+}
+
+.pic:hover{
+	transform: scale(1.3);
+	transition: all 600ms ease-in-out;
+	z-index: 100;
+}
+
+.pic:hover .slider-city-name{
+	display: none;
+}
+
+.pic:hover .hover{
+	display: block;
+}
+
+.slider-city-name{
+	line-height: 125px;
+	display: block;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.hover{
+	display: none;
+}
+
+.hover-city-name, .hover-city-info, .hover-star, .slider .fa-star{
+	color: white;
+	margin-left: 10px; 
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.hover-city-name{
+	position: absolute;
+	top: 0px;
+	font-weight: 500;
+	font-size: 1.1em;
+}
+
+.hover-city-info{
+	font-weight: 400;
+	font-size: 0.8em;
+	color: #E0E0E0;
+}
+
+.hover-star, .slider .fa-star{
+	margin: 0;
+	margin-top: 10px;
+}
+
+.hover-star{
+	position: absolute;
+	bottom: 5px;
+	font-size: 0.9em;
+}
+
+.slider .fa-star{
+	margin-left: 10px;
+}
+
+.background-image{
+	position: relative;
+	height: 680px;
+	width: 100%;
+	margin: auto;
+	overflow: auto;
+	background: url(../images/background.png);
+	background-size: 100% 100%;
+	z-index: 1;
+}
+
+.back-item{
+	height: 680px !important;
+	width: 100%;
+	margin: auto;
+	overflow: auto;
+}
+
+.my-row{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	line-height: 55px;
+	z-index: 10000;
+	border: none;
+	background: none;
+}
+
+.logo{
+	display: inline-block;
+	margin-top: 15px;
+	height: 30px;
+	width: 30px;
+	background: url(../images/logo.png);
+	background-size: 30px 30px;
+	
+}
+
+.col-md-2 *{
+	display: inline-block;
+}
+
+.menu{
+	margin-right: 100px;
+}
+
+.element-menu{
+	margin-right: 25px;
+	margin-left: 25px;
+	background: none;
+	border: none;
+	margin-top: -15px;
+	cursor: pointer;
+}
+
+.menu #button{
+	background: none;
+	border: none;
+	outline: none;
+}
+
+#button:hover, #button:focus, #button:active{
+	box-shadow: none;
+	outline: none;
+}
+
+.element-menu > h3, .company-name, .element-menu > a > h3, #button > h3, .caret, .profile-text-box > h3{
+	display: inline-block;
+	font-size: 1.3em;
+	color: #424242;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.company-name{
+	margin-top: 20px;
+	vertical-align: top;
+}
+
+.element-menu > a:hover, .element-menu > a:link{
+	text-decoration: none;
+}
+
+.col-md-2{
+	height: inherit;
+}
+
+.text-block-center{
+	position: absolute;
+	z-index: 1001;
+	top: 200px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 60%;
+	text-align: center;
+}
+
+.top-text{
+	width: inherit;
+	text-align: left;
+	padding: 0; 
+	font-size: 4vw;
+	font-family: 'Roboto Thin', sans-serif
+}
+
+.bottom-text{
+	width: inherit;
+	margin-top: 0;
+	line-height: 130px;
+	font-size: 15vw;
+	font-family: 'Roboto Bold', sans-serif;
+	font-weight: bold;
+
+}
+
+#plan-trip-button{
+	margin-top: 50px;
+	background: white;
+	border: none;
+	height: 50px;
+	width: 125px;
+	border-radius: 30px;
+	font-size: 1.4em;
+}
+
+.no-comments-text{
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+	font-family: 'Roboto Thin', sans-serif;
+	font-size: 1.3em;
+	font-weight: 600;
+	color: #424242;
+	display: none;
+}
+
+.login-container, .profile-container{
+	z-index: 100000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.90);
+}
+
+#profile-container{
+	position: fixed;
+	display: inline-block;
+	margin: 5% 9%;
+	height: 530px;
+	width: 1100px;
+	background: white;
+}
+
+.profile-row{
+	margin: 0;
+	padding: 0;
+}
+
+.right-column{
+	height: 530px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.left-column{
+	padding: 0;
+}
+
+.profile-picture{
+	display: inline-block;
+	margin: 25px 83px;
+	width: 200px;
+	height: 200px;
+}
+
+.profile-text-box{
+	text-align: center;
+}
+
+.profile-text-box > h3{
+	margin-top: 5px;
+}
+
+.profile-text-box > #profile-email{
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.display-hide{
+	display: none;
+}
+
+#login-form{
+	display: inline-block;
+	position: fixed;
+	height: 350px;
+	min-width: 810px;
+	background: #42A5F5;
+	opacity: 0.9;
+	margin: 10% 20%;
+
+}
+
+.form{
+	position: relative;
+	padding: 120px 0;
+	margin: -50px 50px;
+	height: 450px;
+	width: 350px;
+	background: white;
+}
+
+.email, .password, .submit-btn{
+	display: inline;
+	margin: 10px 25px;
+	height: 45px;
+	width: 300px;
+	padding: 0 20px;
+	font-size: 1.1em;
+}
+
+.submit-btn{
+	position: absolute;
+	width: 100px;
+	margin: 30px -50px;
+    left:50%;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background: #424242;
+}
+
+.submit-btn:hover{
+	background: #EC407A;
+}
+
+.other-option{
+	position: absolute;
+	top: 100px;
+	right: 50px;
+	height: 150px;
+	width: 310px;
+	text-align: center;
+	color: white;
+}
+
+#signup-btn{
+	background: none;
+	border-radius: 30px;
+	height: 45px;
+	line-height: 45px;
+	width: 100px;
+	border: 2px solid white;
+	/*margin-top: 15px; */
+	font-size: 1.1em;
+	margin: 15px auto
+}
+
+a #signup-btn,a:hover #signup-btn{
+	color: white;
+	vertical-align: middle;
+}
+
+#signup-btn:hover{
+	background: #EC407A;
+}
+
+.social-login{
+	margin-top: 150px;
+}
+
+.loginBtn {
+	box-sizing: border-box;
+	position: relative;
+	padding: 0 15px 0 46px;
+	border: none;
+	line-height: 34px;
+	white-space: nowrap;
+	border-radius: 0.2em;
+	font-size: 16px;
+	color: #FFF;
+	display: inline;
+	margin: 5px 25px;
+	width: 300px;
+	text-align: center;
+}
+.loginBtn:before {
+	content: "";
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 34px;
+	height: 100%;
+}
+.loginBtn:focus {
+	outline: none;
+}
+.loginBtn:active {
+	box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+.loginBtn--google {
+	font-family: "Roboto", Roboto, arial, sans-serif;
+	background: #DD4B39;
+}
+.loginBtn--google:before {
+	border-right: #BB3F30 1px solid;
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png') 6px 6px no-repeat;
+}
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+	background: #E74B37;
+}
+
+.dropdown-btn{
+	width: 158px;
+	text-align: left;
+	padding: 0 10px;
+	font-size: 1em;
+	background: none;
+	border: none;
+	cursor: pointer;
+	vertical-align: middle;
+
+}
+
+.photo-container{
+	text-align: center;
+	width: 286px;
+	box-sizing: border-box;
+	margin: auto;
+	padding: 0;
+}
+
+.photo-container *{
+	margin: 0;
+	padding: 0;
+}
+
+.photo-item{
+	padding: 0;
+	width: 141px;
+	height : 100px;
+	object-fit: fill;
+	display: inline-block;
+}
+
+.big-photo{
+	margin-bottom: 4px;
+	width: 100%;
+	height: auto;
+}
+
+.full-photo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.carousel-control{
+	background-image: none !important;
+}
+
+.page{
+	display: inline;
+	list-style-type: none;
+	margin-right:20px;
+	cursor: pointer;
+}
+
+#page-turner{
+	position: absolute;
+	top: 900px;
+	bottom: 0;
+	left: 500px;
+	right: 0;
+	margin: 0 auto;
+	display: inline-block;
+	width:inherit;
+}
+
+.activePage{
+	font-weight:800;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover, a:link, a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+.collapseBtn{
+	margin-top: 15px;
+}
+
+@media (max-width: 768px){
+	.comment-photo{
+		display: none;
+	}
+
+	.comment{
+		width: 550px;
+	}
+}
+
+#gmap{
+	width: 100%;
+	height: 500px;
+}
+
+.footer {
+	background: white;
+	height: 270px;
+	position: relative; }
+.footer .cont {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); }
+.footer .cont .text {
+	display: block;
+	position: relative;
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px; }
+.footer .twitter-logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0.7;
+	width: 32px;
+	height: 32px; }

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
+	
+	<link rel="icon" type="image/png" href="images/logo.png" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<title>Travel website</title>
+
+</head>
+<body>
+<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<div id="popup"></div>
+<div>
+	<nav class="my-row navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<div class="logo"></div>
+				<h2 class="company-name">travel</h2>
+				<button type="button" class="navbar-toggle collapsed collapseBtn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">  <span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse menu" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a class="element-menu" href="#slider">
+							<h3>Discover</h3>
+						</a>
+					</li>
+					<li>
+						<a class="element-menu" href="#gmap">
+							<h3>Create route</h3>
+						</a>
+					</li>
+					<li>
+					<a class="element-menu" id="login-menu-btn">
+						<h3>Log in</h3>
+					</a>
+						</li>
+					<li>
+					<div class="btn-group" id="currentUserBtn" style="display: none">
+						<button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="button">
+							<h3 id="current-user"></h3><span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu pull-right">
+							<li><button id="profile-btn" class="dropdown-btn">Profile</button></li>
+							<li role="separator" class="divider"></li>
+							<li><button id="signout-btn" class="dropdown-btn">Sign out</button></li>
+						</ul>
+					</div>
+					</li>
+				</ul>
+			</div>
+			</li>
+			</ul>
+		</div>
+</nav>
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="images/background.png" class="back-item" alt="First slide">
+			</div>
+			<div class="item">
+				<img src="http://images.huffingtonpost.com/2015-03-20-1426853534-7075669-dreamstimemaximum_30295049.jpg" class="back-item" alt="Second slide">
+			</div>
+			<div class="item">
+				<img src="http://cdn.wallpapersafari.com/78/25/JU9bGD.jpg" class="back-item" alt="Third slide">
+			</div>
+		</div>
+		<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+			<span class="icon-prev" aria-hidden="true"></span>
+		</a>
+		<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+			<span class="icon-next" aria-hidden="true"></span>
+		</a>
+	</div>
+	<span class="text-block-center">
+		<div class="top-text">it's time to</div>
+		<div class="bottom-text">TRAVEL</div>
+		<a href="#slider">
+			<button id="plan-trip-button">Plan trip</button>
+		</a>
+	</span>
+</div>
+<div id="container-fluid">
+</div>
+<div class="slider" id="slider">
+	<div class="search">
+	<i class="fa fa-search" aria-hidden="true"></i>
+	<input type="search" name="search-query" class="search-query" placeholder="Search">
+	</div>
+	<div id="slider-list">
+
+	</div>
+</div>
+<div class="col-md-3 col-sm-6" id="overview_container">
+</div>
+<div class="col-md-9 col-sm-6" id="tab">
+	<div class="opinions-tab">
+		<div class="header-text">Opinions</div>
+		<select id="select" class="down-menu sort-comments">
+			<option class="sort-comments">Most Recent</option>
+			<option class="sort-comments">First comments</option>
+		</select>
+	</div>
+	<div class="comments-section" id="comment-list">
+</div>
+<div id="page-turner">
+</div>
+</div>
+</div>
+<div id="gmap"></div>
+<div class="footer">
+	<div class="cont">
+		<div class="text">National University “Kyiv-Mohyla Academy”, 2016</div>
+		<div class="text">Made by Rostyslav Rozhko</div>
+		<div class="text">
+			<a href="https://twitter.com/RostyslavRozhko">
+				<img class="twitter-logo" src="images/twitter-social-logotype.png">
+			</a>
+		</div>
+	</div>
+</div>
+<!--Scripts-->
+<script type="text/javascript" src="javascripts/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="javascripts/main.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyBV_RriLde7U8ZHCqF7beWnYaVZlxJZzZQ",
+		authDomain: "travel-web-project-b1596.firebaseapp.com",
+		databaseURL: "https://travel-web-project-b1596.firebaseio.com",
+		storageBucket: "travel-web-project-b1596.appspot.com",
+		messagingSenderId: "844254027159"
+	};
+	firebase.initializeApp(config);
+</script>
+<script	type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBV_RriLde7U8ZHCqF7beWnYaVZlxJZzZQ"></script>
+<script type="text/javascript" src="javascripts/mainApp.js"></script>
+    <!--Scripts end-->
+</body>
+</html>

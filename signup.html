@@ -1,0 +1,55 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/form.css">
+    <title>Sign up</title>
+</head>
+<body>
+<div class="form">
+    <form id="form">
+        <div class="title">
+            <h1>Sign up</h1>
+        </div>
+        <div class="line">
+            <span class="inline right">
+                <span><h3>Email</h3></span>
+                <input type="email" class="input email" required>
+            </span>
+            <span class="inline">
+                <span><h3>Password</h3></span>
+                <input type="password" class="input" required>
+            </span>
+        </div>
+        <div class="line">
+            <span class="inline right">
+                <span><h3>Name</h3></span>
+                <input type="text" class="input" id="name" required>
+            </span>
+            <div class="alert leftAlert">No spaces allowed!</div>
+            <span class="inline">
+                <span><h3>Second name</h3></span>
+                <input type="text" class="input" id="secondname" required>
+            </span>
+            <div class="alert rightAlert">No spaces allowed!</div>
+        </div>
+        <div class="line">
+            <span class="inline right">
+                <span><h3>Date of birth(MM/DD/YYYY)</h3></span>
+                <input type="text" class="input" pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" required>
+            </span>
+        </div>
+        <div class="line">
+            <span class="inline right">
+                <span><h3>Description</h3></span>
+                <textarea class="input desc" id="textarea"></textarea>
+            </span>
+            <span id="cnt">0 / 200</span>
+        </div>
+
+        <input type="submit" class="submit" value="Sign up">
+    </form>
+</div>
+
+<script type="text/javascript" src="javascripts/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="javascripts/form.js"></script>
+</body>
+</html>
